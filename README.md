@@ -1,25 +1,9 @@
-# ArUco Marker Follower
-Guide your robot with an ArUco marker. Navigate the robot from the entrance of LSCA 105 to the blue marker next to the south wall of the classroom. 
-
+# Practice Package
+Create a ROS 2 package, build it and use it. 
 
 ## Instructions: 
 Complete `follow_aruco.py`.
-1. (20%) Retrieve video frames using RPi camera.
-2. (30%) Detect and localize ArUco marker in every video frame.
-3. (30%) Use appropriate navigation strategies (e.g. move "forward left" if marker shown on left half of the video frame; stop if robot cannot detect any marker).  
-4. (20%) Upload a video to show the whole navigation process.
-
-#### Hints
-- You may need [picamera2](https://github.com/raspberrypi/picamera2) library to capture video.
-- An inspiring [example](https://github.com/raspberrypi/picamera2/blob/main/examples/opencv_face_detect.py), but face detection.
-- ArUco marker detection [example](https://pyimagesearch.com/2020/12/21/detecting-aruco-markers-with-opencv-and-python/)
-- A [video streaming server](https://github.com/raspberrypi/picamera2/blob/main/examples/mjpeg_server.py) can be useful for debugging.
-- You may want to tweek the motor speed to get a more comfortable driving experience. 
-
-
-## Helpful Resources
-- Getting started with RPi camera [tutorial](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/2).
-- Waveshare Motor Driver Board [Wiki Page](https://www.waveshare.com/wiki/RPi_Motor_Driver_Board).
-- [gpiozero API](https://gpiozero.readthedocs.io/en/stable/). 
-- [picamera2 manual](https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf)
-- [OpenCV-Python Tutorials](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
+1. (30%) Create a ROS package with a Python executable script use command: `ros2 pkg create --build-type ament-python --node-name <executable_name> <node_name>`. **Reference: [Creating a package](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html)**
+2. (40%) Modify the executable python file to publish `String()` message under the topic `/robot/hello_world` with content "Hello World". The topic should be published with the frequency of 10 Hz. **Reference: [Writing a simple publisher and subscriber (Python)](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html)**
+3. (20%) Use `colcon build` to make your package and the executable python script usable (executable using `ros2 run <your_package_name> <executable_name>`). **Reference: [Creating a package](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html)**
+4. (10%) Edit `package.xml` and `setup.py` in your package directory. Fill `<maintainer>`, `<maintainer_email>`, `<description>` or any other fields with appropriate information. **Reference: [Creating a package](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html)**
