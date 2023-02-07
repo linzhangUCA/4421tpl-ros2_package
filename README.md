@@ -8,4 +8,4 @@ Create a ROS 2 package, build it and use it.
 4. (10%) Edit `package.xml` and `setup.py` in your package directory. Fill `<maintainer>`, `<maintainer_email>`, `<description>` or any other fields with appropriate information. **Reference: [Creating a package](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html)**
 
 #### Hint:
-Don't forget to source the overlay (your package) by `source ~/<ros_workspace_name>/install/local_setup.bash`. Or you (**only need to do this once**) can automatic source it by adding the command to `~/.bashrc` by `echo "source ~/<ros_workspace_name>/install/local_setup.bash" >> ~/.bashrc`. You'll replace <ros_package_name> to your actual ROS workspace name.
+Before verify step 3, don't forget to source the overlay (your package) by `source ~/<ros_workspace_name>/install/local_setup.bash`. Or you (**only need to do this once**) can automatic source it by adding the command to `~/.bashrc` by `echo "source ~/<ros_workspace_name>/install/local_setup.bash" >> ~/.bashrc`. You'll replace <ros_package_name> to your actual ROS workspace name.
