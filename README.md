@@ -1,5 +1,5 @@
 # ROS 2 Package
-Create a ROS 2 package. In this package, you'll need to include an executable Python script to start a **node**. The **node** is in charge of publishing a **topic**.
+Create a ROS 2 package. In this package, you'll need to include an executable Python script to start a **node**. The **node** is in charge of publishing a **topic**. Upload your package to this repository.
 
 ## Instructions: 
 1. (30%) Create a ROS package with an executable Python script. Refer to this [tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html). 
