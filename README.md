@@ -4,8 +4,9 @@
 - Link a ROS executable to a Python script.
 - Create a publisher **node** for publishing a **topic** with [`String`](https://docs.ros2.org/foxy/api/std_msgs/msg/String.html) **message**.
 
-## Instructions: 
-1. (30%) Create a ROS package with an executable Python script. Refer to this [tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html). 
+## Requirements: 
+1. Create a ROS package with name `r2_pkg` using the CLI.
+1. (30%) Create a ROS executable associate to the Python script. Refer to this [tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html). 
 > Hint:
 > ```console
 > cd <ros workspace location>/src
