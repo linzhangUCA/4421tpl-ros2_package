@@ -1,5 +1,8 @@
 # ROS 2 Package
-Create a ROS 2 package. In this package, you'll need to include an executable Python script to start a **node**. The **node** is in charge of publishing a **topic** with [`String`](https://docs.ros2.org/foxy/api/std_msgs/msg/String.html) **message**. Upload your package to this repository.
+## Objectives
+- Create a ROS 2 package.
+- Link a ROS executable to a Python script.
+- Create a publisher **node** for publishing a **topic** with [`String`](https://docs.ros2.org/foxy/api/std_msgs/msg/String.html) **message**.
 
 ## Instructions: 
 1. (30%) Create a ROS package with an executable Python script. Refer to this [tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html). 
